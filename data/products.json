@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "Nokia",
+    "img": "images/placeholder.jpg",
+    "price": 200
+  },
+  {
+    "id": 2,
+    "name": "Samsung",
+    "img": "images/placeholder.jpg",
+    "price": 100
+  },
+  {
+    "id": 3,
+    "name": "Apple",
+    "img": "images/placeholder.jpg",
+    "price": 1200
+  },
+  {
+    "id": 4,
+    "name": "Gionee",
+    "img": "images/placeholder.jpg",
+    "price": 7000
+  },
+  {
+    "id": 5,
+    "name": "Lava",
+    "img": "images/placeholder.jpg",
+    "price": 2300
+  },
+  {
+    "id": 6,
+    "name": "Lemon",
+    "img": "images/placeholder.jpg",
+    "price": 8800
+  },
+  {
+    "id": 7,
+    "name": "MI",
+    "img": "images/placeholder.jpg",
+    "price": 4200
+  },
+  {
+    "id": 8,
+    "name": "Xiaomi",
+    "img": "images/placeholder.jpg",
+    "price": 8120
+  },
+  {
+    "id": 9,
+    "name": "Lenovo",
+    "img": "images/placeholder.jpg",
+    "price": 9900
+  },
+  {
+    "id": 10,
+    "name": "Asus",
+    "img": "images/placeholder.jpg",
+    "price": 90
+  },
+  {
+    "id": 11,
+    "name": "TCL",
+    "img": "images/placeholder.jpg",
+    "price": 800
+  },
+  {
+    "id": 12,
+    "name": "Huawei",
+    "img": "images/placeholder.jpg",
+    "price": 900
+  },
+  {
+    "id": 13,
+    "name": "LG",
+    "img": "images/placeholder.jpg",
+    "price": 1700
+  },
+  {
+    "id": 14,
+    "name": "ZTE",
+    "img": "images/placeholder.jpg",
+    "price": 1300
+  },
+  {
+    "id": 15,
+    "name": "Sony",
+    "img": "images/placeholder.jpg",
+    "price": 8700
+  },
+  {
+    "id": 16,
+    "name": "Yulong",
+    "img": "images/placeholder.jpg",
+    "price": 4500
+  },
+  {
+    "id": 17,
+    "name": "Intex",
+    "img": "images/placeholder.jpg",
+    "price": 2500
+  },
+  {
+    "id": 18,
+    "name": "JBL",
+    "img": "images/placeholder.jpg",
+    "price": 7823
+  },
+  {
+    "id": 19,
+    "name": "Harman-Kardon",
+    "img": "images/placeholder.jpg",
+    "price": 9900
+  }
+]
