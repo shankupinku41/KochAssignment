@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="data/products.json"></script>
+        <script type = "text/javascript" src = "js/main.js"></script>
+    </head>
+    <div id = "home-page" ng-app = "kochApp" ng-controller = "homeController">
+        <!-- div for the upper header-->
+        <div id = "header" >
+            <ul class = "icons-list">
+                <li ng-hide = "checkoutPage" ng-click="showCheckoutPage()" class="icons-data">
+                    <a class = "header-icons icon icon ion-ios-cart"></a>
+                    <div ng-show="cartCounter" class="counterclass">
+                        <span class="countclass">{{cartCounter}}</span>
+                    </div>
+                </li>
+                <li ng-hide = "checkoutPage" class="icons-data" ng-click="showSearchField()"><a class = "header-icons icon icon ion-search"></a></li>
+                <li ng-show="searchField && !checkoutPage" class="search-class"><input type="text" placeholder="Search Product ..." class="search-input" ng-model="searchText" ng-change = "searchProduct(searchText)"></a></li>
+                <li ng-show = "checkoutPage" class="icons-data backclass" ng-click="navigateToProductList()"><a class = "header-icons icon icon ion-android-arrow-back"></a></li>
+            </ul>
+        </div>
+        
+
+        <!-- div for the left filter-->
+        <div id = "left-pane" ng-hide = "checkoutPage">
+            <div class="price-filter">
+                <div class="filter-text">{{priceFilterText}}</div>
+                <div class="slider-block">
+                    <span class="multi-range">
+                        <input type="range" min="0" max="10000" value="0" id="lower">
+                        <input type="range" min="0" max="10000" value="10000" id="upper">
+                    </span>
+                    <div class="filter-div-class"><span>{{lVText}}</span><input class="filter-input-class" readonly ng-model = "minValue" id ="lowerValue" type="text" ng-change="updateLowerValue(minValue)"></div>
+                    <div class="filter-div-class"><span>{{hVText}}</span><input class="filter-input-class" readonly id ="higherValue" type="text" ng-model = "maxValue" ng-change="updateHigherValue(maxValue)"></div>
+                </div>
+                <div class="apply-class" ng-click = "filterProducts()">
+                    <a class = "apply-class-anchor">{{applyText}}</a>
+                </div>
+            </div>
+        </div>
+
+        <!--div for the right product display-->
+        <div id = "right-pane" ng-hide = "checkoutPage">
+            <div id = "sortDiv">
+                <span class = "sort-text">{{sorting}}</span>
+                <select ng-model="selectedName" ng-options="item for item in names" ng-change = "sortProductList(selectedName)">
+                    <option value="" selected="selected">Choose</option>
+                </select>
+            </div>
+            <div id = "productDiv"></div>
+        </div>
+
+    <div ng-show = "checkoutPage && productsPresent" id = "checkoutProductList" style=" display: inline-block;position: relative;width: 55%;margin-top: 3%;">
+    </div>
+
+<div ng-show = "checkoutPage && productsPresent" id = "billingInfo" style="
+    position: relative;
+    float: right;
+    text-align: left;
+    border: 1px solid orange;
+    width: 30%;
+    height: 60%;
+    margin-top: 4%;
+    margin-right: 10%;
+">
+</div>
+<div id = "noProductsId" class="noProductsSelected" ng-show = "displayEmptyProductMessage()" > No Products selected !! Please go back to add products in your cart.</div>
+<div ng-show = "checkoutPage" class="checkoutDiv">
+    <button ng-click= "showAlert()" class="checkoutButton"> Checkout </button>
+    
+</div>
+    </div>
+
+    
+</html>
