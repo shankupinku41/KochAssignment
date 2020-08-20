@@ -1,0 +1,272 @@
+/* line 3, D:/Koch/scss/styles.scss */
+#home-page {
+  position: relative;
+}
+
+/* line 7, D:/Koch/scss/styles.scss */
+#header {
+  border-top: 1px solid #ffa500;
+  border-bottom: 1px solid #ffa500;
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 16, D:/Koch/scss/styles.scss */
+.utility-icons {
+  float: right;
+  width: 40%;
+  margin-right: 10%;
+}
+
+/* line 22, D:/Koch/scss/styles.scss */
+.icons-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  display: block;
+  width: 90%;
+}
+
+/* line 32, D:/Koch/scss/styles.scss */
+.icons-data {
+  float: right;
+  width: 5%;
+  height: 100%;
+}
+
+/* line 36, D:/Koch/scss/styles.scss */
+.icons-data .header-icons {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+}
+
+/* line 41, D:/Koch/scss/styles.scss */
+.icons-data .header-icons::before {
+  margin-top: 25%;
+  font-size: xx-large;
+}
+
+/* line 46, D:/Koch/scss/styles.scss */
+.icons-data:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+/* line 52, D:/Koch/scss/styles.scss */
+.backclass {
+  float: left;
+}
+
+/* line 56, D:/Koch/scss/styles.scss */
+#left-pane {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  height: 90%;
+  border-right: 1px solid #ffa500;
+}
+
+/* line 64, D:/Koch/scss/styles.scss */
+#right-pane {
+  float: left;
+  box-sizing: border-box;
+  width: 65%;
+}
+
+/* line 70, D:/Koch/scss/styles.scss */
+#sortDiv {
+  text-align: right;
+  float: right;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/* line 78, D:/Koch/scss/styles.scss */
+.sort-text {
+  font-weight: bold;
+}
+
+/* line 82, D:/Koch/scss/styles.scss */
+#productDiv {
+  background-color: #aaa;
+  position: relative;
+}
+
+/* line 87, D:/Koch/scss/styles.scss */
+.inner {
+  border: 1px solid black;
+  margin-left: 3%;
+}
+
+/* line 92, D:/Koch/scss/styles.scss */
+#addCart {
+  margin-right: 6%;
+  float: right;
+  color: orange;
+}
+
+/* line 98, D:/Koch/scss/styles.scss */
+.price-filter {
+  text-align: center;
+  position: relative;
+}
+
+/* line 103, D:/Koch/scss/styles.scss */
+.filter-text {
+  font-weight: bolder;
+  font-family: "sans-serif";
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+/* line 110, D:/Koch/scss/styles.scss */
+.apply-class-anchor {
+  position: relative;
+  top: 2px;
+}
+
+/* line 115, D:/Koch/scss/styles.scss */
+.apply-class {
+  height: 25%;
+  display: block;
+  position: absolute;
+  width: 25%;
+  color: white;
+  top: 130px;
+  cursor: pointer;
+  border: 1px solid black;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: orange;
+}
+
+/* line 127, D:/Koch/scss/styles.scss */
+.apply-class:hover {
+  box-shadow: 5px 10px 18px #888888;
+}
+
+/* line 133, D:/Koch/scss/styles.scss */
+input[type="range"] {
+  box-sizing: border-box;
+  appearance: none;
+  width: 200px;
+  margin: 0;
+  padding: 0 2px;
+  border: 0;
+  left: 18%;
+  top: 40px;
+  border-radius: 1px;
+  outline: none;
+  background: linear-gradient(orange, orange) no-repeat center;
+  /* Use a linear gradient to generate only the 2px height background */
+  background-size: 100% 2px;
+  pointer-events: none;
+}
+
+/* line 149, D:/Koch/scss/styles.scss */
+input[type="range"]:active, input[type="range"]:focus {
+  outline: none;
+}
+
+/* line 154, D:/Koch/scss/styles.scss */
+input[type="range"]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: orange;
+  position: relative;
+  margin: 5px 0;
+  /* Add some margin to ensure box shadow is shown */
+  cursor: pointer;
+  appearance: none;
+  pointer-events: all;
+  box-shadow: 0 1px 4px 0.5px grey;
+}
+
+/* line 170, D:/Koch/scss/styles.scss */
+.multi-range input[type="range"] {
+  position: absolute;
+}
+
+/* line 172, D:/Koch/scss/styles.scss */
+.multi-range input[type="range"]:nth-child(2) {
+  background: none;
+}
+
+/* line 178, D:/Koch/scss/styles.scss */
+.slider-block {
+  height: 15%;
+}
+
+/* line 182, D:/Koch/scss/styles.scss */
+.filter-div-class {
+  float: left;
+  width: 50%;
+  margin-top: 20%;
+}
+
+/* line 188, D:/Koch/scss/styles.scss */
+.filter-input-class {
+  width: 50%;
+}
+
+/* line 192, D:/Koch/scss/styles.scss */
+.search-input {
+  margin-top: 12%;
+}
+
+/* line 196, D:/Koch/scss/styles.scss */
+.search-class {
+  width: 15%;
+  float: right;
+  height: 100%;
+  margin-right: 1%;
+}
+
+/* line 203, D:/Koch/scss/styles.scss */
+.counterclass {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 30px;
+  border: 1px solid orange;
+  margin-top: -48px;
+  margin-left: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+/* line 215, D:/Koch/scss/styles.scss */
+.countclass {
+  position: relative;
+  top: 2px;
+}
+
+/* line 220, D:/Koch/scss/styles.scss */
+.noProductsSelected {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 225, D:/Koch/scss/styles.scss */
+.checkoutDiv {
+  margin-top: 34%;
+  float: right;
+  position: relative;
+  margin-right: -20%;
+}
+
+/* line 232, D:/Koch/scss/styles.scss */
+.checkoutButton {
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+}
+
+/*# sourceMappingURL=styles.css.map */
